@@ -45,6 +45,7 @@ LLM self-evolution methods are classified into:
 - **LLM-Agent Methods**: Improve interaction and problem-solving in dynamic environments.
 
 _**Table 1: Overview of Self-Evolution Methods**_
+
 ![Table 1](../assets/Table_1_Overview_of_Self-Evolution_Methods.png)
 
 ---
