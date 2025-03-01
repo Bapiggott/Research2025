@@ -31,7 +31,7 @@ Self-evolution in LLMs follows an iterative cycle of four phases:
 3. **Updating**: The model integrates refined experiences into its learning process.
 4. **Evaluation**: The model assesses its performance and sets new learning objectives.
 
-![Figure 2: Conceptual Framework of Self-Evolution](path/to/figure2.png)
+![Figure 2: Conceptual Framework of Self-Evolution](../assets/Conceptual_Framework_of_Self-Evolution.png)
 
 ---
 
@@ -45,6 +45,7 @@ LLM self-evolution methods are classified into:
 - **LLM-Agent Methods**: Improve interaction and problem-solving in dynamic environments.
 
 _**Table 1: Overview of Self-Evolution Methods**_
+![Table 1](../assets.png)
 
 ---
 
@@ -64,7 +65,7 @@ Self-evolving LLMs acquire new experiences via:
 - **Model-Based Feedback**: Self-evaluation and critique generation.
 - **Environment-Based Feedback**: Real-world validation via interpreters, tool use, and embodied systems.
 
-![Figure 6: Types of Feedback](path/to/figure6.png)
+![Figure 6: Types of Feedback](../assets/figure6.png)
 
 ---
 
@@ -78,7 +79,7 @@ LLMs refine their outputs to improve learning quality via:
   - **Critique-Based**: Model revises outputs based on self-generated critiques.
   - **Critique-Free**: Adjusting responses based on factual signals and execution results.
 
-![Figure 7: Experience Refinement Process](path/to/figure7.png)
+![Figure 7: Experience Refinement Process](../assets/Experience_Refinement_Process.png)
 
 ---
 
@@ -94,7 +95,7 @@ Updating methods integrate refined experiences to enhance model learning. Approa
 - **External Memory**: Storing past knowledge for retrieval.
 - **Working Memory**: Dynamically updating internal beliefs and behaviors based on past experiences.
 
-![Figure 8: Illustration of Updating Methods](path/to/figure8.png)
+![Figure 8: Illustration of Updating Methods](../assets/Illustration_of_Updating_Methods.png)
 
 ---
 
@@ -104,6 +105,7 @@ Evaluation ensures the effectiveness of self-evolution through:
 - **Qualitative Analysis**: Case studies, error analysis, and evolving benchmarks.
 
 _**Table 2: Evaluation Methods**_
+![Table 1](../assets/Table_2_Evaluation_Methods.png)
 
 ---
 
@@ -136,5 +138,5 @@ Self-evolution represents a paradigm shift in LLM training, enabling autonomous 
 
 ---
 
-![Figure 3: Taxonomy of Self-Evolving Large Language Models](path/to/figure3.png)
+![Figure 3: Taxonomy of Self-Evolving Large Language Models](../assets/Taxonomy_of_Self-Evolving.png)
 
