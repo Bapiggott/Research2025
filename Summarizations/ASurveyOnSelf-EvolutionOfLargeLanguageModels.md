@@ -45,7 +45,7 @@ LLM self-evolution methods are classified into:
 - **LLM-Agent Methods**: Improve interaction and problem-solving in dynamic environments.
 
 _**Table 1: Overview of Self-Evolution Methods**_
-![Table 1](../assets.png)
+![Table 1](../assets/Table_1_Overview_of_Self-Evolution_Methods.png)
 
 ---
 
@@ -65,7 +65,7 @@ Self-evolving LLMs acquire new experiences via:
 - **Model-Based Feedback**: Self-evaluation and critique generation.
 - **Environment-Based Feedback**: Real-world validation via interpreters, tool use, and embodied systems.
 
-![Figure 6: Types of Feedback](../assets/figure6.png)
+![Figure 6: Types of Feedback](../assets/Types_of_Feedback.png)
 
 ---
 
@@ -105,7 +105,8 @@ Evaluation ensures the effectiveness of self-evolution through:
 - **Qualitative Analysis**: Case studies, error analysis, and evolving benchmarks.
 
 _**Table 2: Evaluation Methods**_
-![Table 1](../assets/Table_2_Evaluation_Methods.png)
+
+![Table 2](../assets/Table_2_Evaluation_Methods.png)
 
 ---
 
