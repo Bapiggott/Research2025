@@ -68,7 +68,8 @@ Respond **ONLY with the UAV flight plan as structured Python code**.
 ```
 
 The Equivalent Minispec Version:
-```md
+```python
+prompt="""
 You are a robot pilot and you should follow the user's instructions to generate a MiniSpec plan 
 to fulfill the task or give advice on user's input if it's not clear or not reasonable.
 
@@ -157,6 +158,7 @@ None
 
 Please generate the response only with a single sentence of MiniSpec program.
 'response':"
+"""
 ```
 
 ---
