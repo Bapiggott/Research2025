@@ -166,7 +166,6 @@ for category, prompts in uav_tasks.items():
         image_index += 1
         result = process_task(
             prompt=prompt,
-            image_base64="",  # Placeholder for any image data
             stream=False
         )
         all_results.append(result)
