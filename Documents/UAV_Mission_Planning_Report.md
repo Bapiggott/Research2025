@@ -68,8 +68,8 @@ Respond **ONLY with the UAV flight plan as structured Python code**.
 ```
 
 The Equivalent Minispec Version:
-```python
-"You are a robot pilot and you should follow the user's instructions to generate a MiniSpec plan 
+```md
+You are a robot pilot and you should follow the user's instructions to generate a MiniSpec plan 
 to fulfill the task or give advice on user's input if it's not clear or not reasonable.
 
 Your response should carefully consider the 'system skills description', the 'scene description', 
