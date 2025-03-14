@@ -283,9 +283,3 @@ This system provides a **robust UAV automation framework**, ensuring **safe flig
 - **Integrate real-time flight data** for adaptive mission control.
 - **Enhance obstacle detection** with **vision-based AI models**.
 - **Expand UAV command sets** for **advanced aerial maneuvers**.
-
----
-
-## **Contributors**
-🚀 Developed by **UAV Automation Team**  
-📅 Date: **March 2025**  
