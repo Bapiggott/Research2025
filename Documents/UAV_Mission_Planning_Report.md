@@ -230,7 +230,7 @@ class UAVTaskProcessor:
                 "model": self.model_name,
                 "messages": [
                     {"role": "system", "content": system_message},
-                    {"role": "user", "content": prompt, "images": [image_base64] if image_base64 else [], "format": "json"}
+                    {"role": "user", "content": prompt, "format": "json"}
                 ],
                 "temperature": self.temperature,
                 "stream": stream,
