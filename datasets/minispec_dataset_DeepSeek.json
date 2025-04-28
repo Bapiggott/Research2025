@@ -1,0 +1,8523 @@
+{
+  "version": "2.0",
+  "examples": [
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move right turn counter-clockwise",
+      "response": "mr(53); tu(45);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(92); ml(43);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(33);"
+    },
+    {
+      "scene": [
+        "window",
+        "mug"
+      ],
+      "task": "Move backward move forward take picture",
+      "response": "mb(31); mf(82); tp();"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(14); mr(17);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Object",
+      "response": "mu(51);"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug",
+        "laptop",
+        "window"
+      ],
+      "task": "Object",
+      "response": "g('remote');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(27); s('keys');"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair",
+        "book",
+        "picture"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(36); g('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(45); tu(45);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "plant"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(87); tc(90);"
+    },
+    {
+      "scene": [
+        "keys",
+        "book"
+      ],
+      "task": "Turn clockwise move backward",
+      "response": "tc(180); mb(94);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(25); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "picture"
+      ],
+      "task": "Move left object",
+      "response": "ml(43); s('plant');"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "mug"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(45); tu(45);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move left object",
+      "response": "ml(85); mu(46);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); md(58);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(93); s('keys');"
+    },
+    {
+      "scene": [
+        "window",
+        "mug"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(35); _d=od('book'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "phone"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(65); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(45); mf(97);"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "plant",
+        "window"
+      ],
+      "task": "Move forward object",
+      "response": "mf(55); s('mug');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(88); s('remote');"
+    },
+    {
+      "scene": [
+        "phone",
+        "book"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(89); md(67); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug"
+      ],
+      "task": "Move left take picture take picture",
+      "response": "ml(46); tp(); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "window"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(53); _d=od('window'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "remote"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Turn clockwise move left",
+      "response": "tc(180); ml(56);"
+    },
+    {
+      "scene": [
+        "window",
+        "keys",
+        "mug",
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "?iv('picture')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(180);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(38); g('book');"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "?iv('picture')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "remote",
+        "plant"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); s('plant');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move right",
+      "response": "mr(69);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(23); g('remote');"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "remote",
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(50); s('plant');"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop",
+        "chair",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(180); tc(30);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(90); g('mug');"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "chair"
+      ],
+      "task": "Move left move left",
+      "response": "ml(19); ml(81);"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "phone",
+        "chair"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(49); tp();"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); mu(51);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "keys",
+        "laptop"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(98); g('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(90); mf(33);"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "_d=od('book'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug",
+        "phone",
+        "remote"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(12); mf(99);"
+    },
+    {
+      "scene": [
+        "book",
+        "keys",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "chair",
+        "mug"
+      ],
+      "task": "Turn clockwise take picture take picture",
+      "response": "tc(90); tp(); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(100); mr(12);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(48); mf(24);"
+    },
+    {
+      "scene": [
+        "window",
+        "mug",
+        "remote"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(90); ?iv('book')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "mug",
+        "phone"
+      ],
+      "task": "Turn clockwise take picture take picture",
+      "response": "tc(30); tp(); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys",
+        "picture",
+        "laptop"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Object take picture",
+      "response": "g('plant'); tp();"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(22); s('remote');"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "mug",
+        "book"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "plant",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(44); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "keys",
+        "plant"
+      ],
+      "task": "Turn clockwise turn clockwise",
+      "response": "tc(180); tc(30);"
+    },
+    {
+      "scene": [
+        "book",
+        "keys",
+        "laptop"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); s('remote');"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug",
+        "window",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(180); s('plant'); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "phone",
+        "plant"
+      ],
+      "task": "Move backward",
+      "response": "mb(81);"
+    },
+    {
+      "scene": [
+        "book",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "mu(79);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "picture"
+      ],
+      "task": "Move forward object",
+      "response": "mf(28); g('keys');"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "plant",
+        "picture"
+      ],
+      "task": "Move left move right take picture",
+      "response": "ml(50); mr(59); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "chair"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(72); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "phone",
+        "picture",
+        "laptop"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(84); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "book",
+        "mug",
+        "phone"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(61); mf(40); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(45); s('chair'); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(47); mu(81);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys",
+        "book"
+      ],
+      "task": "Object",
+      "response": "md(91);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(81); g('keys'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "remote",
+        "plant",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(17); g('keys');"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "picture",
+        "mug"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(94); mb(68);"
+    },
+    {
+      "scene": [
+        "phone",
+        "book",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "book"
+      ],
+      "task": "Move right",
+      "response": "mr(30);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "keys"
+      ],
+      "task": "Object take picture",
+      "response": "g('book'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "remote",
+        "window"
+      ],
+      "task": "Move right object",
+      "response": "mr(80); s('laptop');"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(30); tu(180);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "keys"
+      ],
+      "task": "Turn clockwise take picture",
+      "response": "tc(180); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug",
+        "phone",
+        "laptop"
+      ],
+      "task": "Move left move backward take picture",
+      "response": "ml(90); mb(75); tp();"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(45); g('phone'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(180); mf(57);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window",
+        "picture"
+      ],
+      "task": "Move backward",
+      "response": "mb(98);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('mug');"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(100); ml(100);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(180); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "md(83);"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(30); s('remote'); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop",
+        "book"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "book",
+        "phone",
+        "keys",
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "_target=sa('something edible'); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "window",
+        "phone"
+      ],
+      "task": "Turn clockwise turn clockwise",
+      "response": "tc(180); tc(30);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "phone"
+      ],
+      "task": "Turn clockwise move right take picture",
+      "response": "tc(180); mr(73); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(39); mr(87);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Object",
+      "response": "s('window');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(90); _d=od('phone'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "plant",
+        "book"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(37); tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "remote",
+        "picture"
+      ],
+      "task": "Move left move left",
+      "response": "ml(96); ml(42);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(71); mb(24);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(78); tc(30);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Object",
+      "response": "?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(20); g('keys');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(73); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward object",
+      "response": "mf(25); g('book');"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Turn clockwise move left",
+      "response": "tc(30); ml(34);"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "phone",
+        "plant"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(59); mf(18);"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(30);"
+    },
+    {
+      "scene": [
+        "book",
+        "phone"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(11); g('picture'); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "md(56);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Object take picture",
+      "response": "s('window'); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "chair"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(43); tp();"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move backward circle around",
+      "response": "mb(44); mi(False);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "window"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(86); tu(90);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "mu(37);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(45);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(64); s('keys');"
+    },
+    {
+      "scene": [
+        "window",
+        "picture"
+      ],
+      "task": "Move forward object",
+      "response": "mf(52); g('chair');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(98); ml(16);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "book"
+      ],
+      "task": "Move right object",
+      "response": "mr(54); md(18);"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); s('picture');"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "chair",
+        "mug"
+      ],
+      "task": "Move backward",
+      "response": "mb(56);"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture"
+      ],
+      "task": "Move left object",
+      "response": "ml(58); l('Task complete');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(22); tc(90);"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(52); mb(47);"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_d=od('plant'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(23); s('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "keys",
+        "picture",
+        "plant"
+      ],
+      "task": "Move backward object",
+      "response": "mb(48); l('Task complete');"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Object",
+      "response": "_target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "picture"
+      ],
+      "task": "Move right",
+      "response": "mr(74);"
+    },
+    {
+      "scene": [
+        "book",
+        "chair"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(72); s('keys'); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(67); mb(75);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "chair",
+        "phone"
+      ],
+      "task": "Move backward object",
+      "response": "mb(84); _d=od('picture'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(12); tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "window",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(44); ?iv('plant')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise circle around",
+      "response": "tu(45); mi(True);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(15); mr(74);"
+    },
+    {
+      "scene": [
+        "phone",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(56); g('book');"
+    },
+    {
+      "scene": [
+        "book",
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(62); l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "mug",
+        "phone"
+      ],
+      "task": "Move backward move right take picture",
+      "response": "mb(56); mr(51); tp();"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(30); mf(33);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Move right object",
+      "response": "mr(93); s('mug');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys",
+        "picture",
+        "mug"
+      ],
+      "task": "Move backward object",
+      "response": "mb(20); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "picture",
+        "chair"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(73); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "plant",
+        "keys"
+      ],
+      "task": "Move forward turn clockwise",
+      "response": "mf(62); tc(30);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(26); g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "picture"
+      ],
+      "task": "Move left object",
+      "response": "ml(41); s('picture');"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "phone",
+        "picture"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(97); mb(36);"
+    },
+    {
+      "scene": [
+        "window",
+        "book",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(99); mf(42);"
+    },
+    {
+      "scene": [
+        "keys",
+        "remote",
+        "book"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(30);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book"
+      ],
+      "task": "Turn counter-clockwise move backward",
+      "response": "tu(45); mb(62);"
+    },
+    {
+      "scene": [
+        "chair",
+        "book",
+        "plant"
+      ],
+      "task": "Move left circle around",
+      "response": "ml(39); mi(False);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(48); ml(89);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(72); g('book'); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); md(93);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward",
+      "response": "mf(12);"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug",
+        "plant",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(37); g('plant');"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "chair",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise move forward take picture",
+      "response": "tu(180); mf(45); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Move forward move forward take picture",
+      "response": "mf(37); mf(51); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(83); ml(74);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move forward turn clockwise",
+      "response": "mf(94); tc(30);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Object",
+      "response": "?iv('laptop')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "book",
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(83); _d=od('phone'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "book",
+        "mug",
+        "phone",
+        "keys"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone",
+        "chair",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(68); mu(36);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('laptop');"
+    },
+    {
+      "scene": [
+        "keys",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); s('plant');"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "window"
+      ],
+      "task": "Move left move forward take picture",
+      "response": "ml(23); mf(66); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "window",
+        "plant"
+      ],
+      "task": "Turn clockwise take picture",
+      "response": "tc(45); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "md(83);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(42); ?iv('picture')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "book",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "window",
+        "keys",
+        "remote"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(10); g('plant'); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "book",
+        "mug"
+      ],
+      "task": "Move right object",
+      "response": "mr(95); g('book');"
+    },
+    {
+      "scene": [
+        "book",
+        "phone"
+      ],
+      "task": "Move right",
+      "response": "mr(47);"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys",
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(27); g('plant');"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "remote",
+        "book"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(84); ml(77);"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Object take picture",
+      "response": "l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "mug",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "?iv('mug')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "plant",
+        "mug"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(79); mr(48);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(47); s('remote');"
+    },
+    {
+      "scene": [
+        "phone",
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(20); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "s('book');"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair",
+        "remote",
+        "book"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(84); mf(42);"
+    },
+    {
+      "scene": [
+        "picture",
+        "window"
+      ],
+      "task": "Object",
+      "response": "_d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "plant",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise move backward",
+      "response": "tu(45); mb(11);"
+    },
+    {
+      "scene": [
+        "phone",
+        "plant"
+      ],
+      "task": "Move backward object",
+      "response": "mb(26); s('window');"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise move backward take picture",
+      "response": "tu(180); mb(65); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(41); mu(26);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); mu(50);"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(54); mr(36);"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "g('phone');"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Turn counter-clockwise turn clockwise take picture",
+      "response": "tu(30); tc(90); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(39); s('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(45); s('plant'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "picture",
+        "book"
+      ],
+      "task": "Turn counter-clockwise take picture",
+      "response": "tu(30); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote"
+      ],
+      "task": "Move backward",
+      "response": "mb(72);"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys",
+        "book",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); g('picture');"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Move right",
+      "response": "mr(51);"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); g('laptop');"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop"
+      ],
+      "task": "Move backward move backward take picture",
+      "response": "mb(39); mb(71); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "laptop",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(45);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move backward circle around",
+      "response": "mb(58); mi(True);"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(99); s('laptop');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(29); tu(45);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "keys"
+      ],
+      "task": "Move left object",
+      "response": "ml(51); mu(26);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone",
+        "plant"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(15); _d=od('keys'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise move right",
+      "response": "tu(45); mr(89);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(90); tu(30);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "mu(60);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move right object",
+      "response": "mr(25); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); _d=od('plant'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "book",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(66); s('window');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise move backward",
+      "response": "tu(30); mb(89);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(70); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "_d=od('picture'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "picture",
+        "chair",
+        "laptop",
+        "window"
+      ],
+      "task": "Turn counter-clockwise move right",
+      "response": "tu(45); mr(70);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Object",
+      "response": "g('phone');"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "phone"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "chair"
+      ],
+      "task": "Move forward move forward take picture",
+      "response": "mf(69); mf(39); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "laptop",
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); md(62);"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(45);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); g('mug');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(30); tu(90);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "?iv('mug')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "mug",
+        "chair"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(73); mb(32);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "keys",
+        "laptop"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(36); mf(28);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); s('book');"
+    },
+    {
+      "scene": [
+        "chair",
+        "book"
+      ],
+      "task": "Move backward turn clockwise",
+      "response": "mb(82); tc(45);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Move backward move left take picture",
+      "response": "mb(55); ml(53); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys",
+        "book",
+        "window"
+      ],
+      "task": "Move forward object",
+      "response": "mf(47); s('plant');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(66); mu(30); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(92); s('mug');"
+    },
+    {
+      "scene": [
+        "book",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "?iv('plant')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone",
+        "chair"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(48); tp();"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(18); mf(21);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "mug"
+      ],
+      "task": "Move left move right",
+      "response": "ml(91); mr(36);"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop"
+      ],
+      "task": "Move forward object",
+      "response": "mf(71); md(63);"
+    },
+    {
+      "scene": [
+        "book",
+        "window",
+        "mug"
+      ],
+      "task": "Move forward object",
+      "response": "mf(24); mu(76);"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(45); mr(81);"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(65); mb(10);"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(180); ml(45);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); mu(89);"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(11); mb(68);"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "book",
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); g('book');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn clockwise circle around",
+      "response": "tc(180); mi(True);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "book",
+        "picture"
+      ],
+      "task": "Move forward object",
+      "response": "mf(13); _d=od('book'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone",
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); l('Task complete');"
+    },
+    {
+      "scene": [
+        "chair",
+        "book",
+        "window",
+        "mug"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(24); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('laptop');"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(30);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "g('chair');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(17); _d=od('phone'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "book"
+      ],
+      "task": "Move backward object",
+      "response": "mb(65); g('plant');"
+    },
+    {
+      "scene": [
+        "book",
+        "mug",
+        "picture",
+        "keys"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(92); mf(14);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "keys",
+        "chair"
+      ],
+      "task": "Move right move left take picture",
+      "response": "mr(56); ml(30); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "chair",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "plant",
+        "keys",
+        "picture"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); g('mug');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "picture",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); s('mug');"
+    },
+    {
+      "scene": [
+        "book",
+        "window"
+      ],
+      "task": "Move forward turn counter-clockwise",
+      "response": "mf(27); tu(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('remote');"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(73); mf(80);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "s('mug');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(65); s('keys'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "laptop",
+        "window"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(58); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "chair",
+        "book"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window"
+      ],
+      "task": "Move left",
+      "response": "ml(10);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(83); tc(30);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(180); tc(30);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "laptop"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(13); s('picture'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "window",
+        "remote"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(67); mf(90);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn clockwise take picture",
+      "response": "tc(180); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "window"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "mug"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(43); mr(56);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "chair"
+      ],
+      "task": "Move left turn clockwise take picture",
+      "response": "ml(73); tc(30); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "phone",
+        "plant"
+      ],
+      "task": "Move backward",
+      "response": "mb(78);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window"
+      ],
+      "task": "Turn clockwise move left",
+      "response": "tc(45); ml(68);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Object take picture",
+      "response": "g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(25); tu(30);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move backward",
+      "response": "mb(97);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "picture",
+        "laptop"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(69); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(13); l('Task complete');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(79); mf(15);"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys",
+        "laptop",
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "?iv('book')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "phone",
+        "window"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(30);"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "mu(49);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Object",
+      "response": "g('mug');"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(20); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "mug",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); md(17);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "book"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(12); mf(16);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "book"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(180);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "mug",
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(17); _d=od('plant'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); l('Task complete');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "keys",
+        "window"
+      ],
+      "task": "Move forward",
+      "response": "mf(37);"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "s('book');"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); s('laptop');"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone",
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "mu(40); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(46); s('chair');"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone",
+        "plant",
+        "keys"
+      ],
+      "task": "Move right object",
+      "response": "mr(37); _d=od('phone'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "remote",
+        "window"
+      ],
+      "task": "Move left object",
+      "response": "ml(90); s('window');"
+    },
+    {
+      "scene": [
+        "book",
+        "picture",
+        "plant"
+      ],
+      "task": "Move right object",
+      "response": "mr(78); s('phone');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(92); mb(99);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "_d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "laptop",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(33); s('picture');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(30); tu(30);"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('window');"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "plant",
+        "phone"
+      ],
+      "task": "Move backward move forward take picture",
+      "response": "mb(57); mf(51); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "keys",
+        "mug"
+      ],
+      "task": "Object take picture",
+      "response": "g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "g('phone');"
+    },
+    {
+      "scene": [
+        "window",
+        "chair"
+      ],
+      "task": "Move right move right",
+      "response": "mr(97); mr(74);"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "phone",
+        "keys"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); s('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(88); g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop"
+      ],
+      "task": "Move backward move left take picture",
+      "response": "mb(55); ml(57); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "phone",
+        "laptop"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(30); s('window'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "mug",
+        "remote",
+        "laptop"
+      ],
+      "task": "Turn clockwise take picture",
+      "response": "tc(45); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(90);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(76); ml(38);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "?iv('mug')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "laptop"
+      ],
+      "task": "Move right",
+      "response": "mr(93);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(100); mb(61);"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "picture",
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); ?iv('phone')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move right object",
+      "response": "mr(39); g('mug');"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "laptop",
+        "chair"
+      ],
+      "task": "Move forward",
+      "response": "mf(79);"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); md(65);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "picture",
+        "chair"
+      ],
+      "task": "Move backward object",
+      "response": "mb(24); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone",
+        "book",
+        "plant"
+      ],
+      "task": "Move forward object",
+      "response": "mf(16); _target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "mug",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(90); g('laptop');"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(64); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys",
+        "mug"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(42); _d=od('plant'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys",
+        "mug",
+        "window"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(75); mr(55);"
+    },
+    {
+      "scene": [
+        "window",
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('mug');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "book",
+        "phone"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(94); mu(60); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(90); s('book'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "mug"
+      ],
+      "task": "Move backward object",
+      "response": "mb(27); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "keys",
+        "mug"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(33); tc(180);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(30); tc(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "s('phone');"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "chair",
+        "phone"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(17); mf(26);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "g('chair');"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "keys",
+        "remote"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(30); tu(45);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book"
+      ],
+      "task": "Move right move right",
+      "response": "mr(40); mr(51);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(39); tc(180);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move left move right",
+      "response": "ml(46); mr(86);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant",
+        "chair"
+      ],
+      "task": "Move right turn counter-clockwise",
+      "response": "mr(13); tu(45);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move left object",
+      "response": "ml(94); _d=od('plant'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "picture"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(37); mf(37);"
+    },
+    {
+      "scene": [
+        "phone",
+        "laptop"
+      ],
+      "task": "Object take picture",
+      "response": "s('book'); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "laptop"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(45); mu(62); tp();"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(55); g('plant');"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(18); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone"
+      ],
+      "task": "Move forward",
+      "response": "mf(87);"
+    },
+    {
+      "scene": [
+        "keys",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move right object",
+      "response": "mr(24); s('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "remote"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); s('laptop');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(38); ?iv('laptop')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(30); mf(79);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(180); ml(88);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "remote"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(56); tu(90);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(62); g('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture"
+      ],
+      "task": "Move backward move backward take picture",
+      "response": "mb(41); mb(40); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left move left",
+      "response": "ml(47); ml(31);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "keys",
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(90); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair",
+        "phone"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(66); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "plant",
+        "remote",
+        "phone"
+      ],
+      "task": "Move backward object",
+      "response": "mb(16); ?iv('remote')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(45); tc(45);"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "s('picture');"
+    },
+    {
+      "scene": [
+        "window",
+        "keys",
+        "plant",
+        "picture"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(45);"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone",
+        "remote",
+        "picture"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(73); mf(57);"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); l('Task complete');"
+    },
+    {
+      "scene": [
+        "keys",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(36); g('chair');"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "window",
+        "mug"
+      ],
+      "task": "Move right turn clockwise take picture",
+      "response": "mr(50); tc(45); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "window"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(78); mf(77);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move backward turn clockwise",
+      "response": "mb(78); tc(30);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair",
+        "phone",
+        "book"
+      ],
+      "task": "Move forward turn counter-clockwise",
+      "response": "mf(82); tu(45);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(180); mf(27);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Turn counter-clockwise take picture",
+      "response": "tu(45); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "book",
+        "keys"
+      ],
+      "task": "Circle around",
+      "response": "mi(False);"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture"
+      ],
+      "task": "Move right object",
+      "response": "mr(27); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "keys",
+        "window",
+        "picture",
+        "remote"
+      ],
+      "task": "Move right",
+      "response": "mr(90);"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "keys"
+      ],
+      "task": "Move forward turn clockwise",
+      "response": "mf(46); tc(45);"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "plant",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "s('remote');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(90);"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(71); mr(28);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Object take picture",
+      "response": "g('keys'); tp();"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(41); s('window'); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(26); g('phone');"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone",
+        "book",
+        "plant"
+      ],
+      "task": "Move forward",
+      "response": "mf(49);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "?iv('keys')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(80); g('plant');"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "mu(78);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); md(87);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "book",
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(14); _d=od('remote'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "phone"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(180); tu(180);"
+    },
+    {
+      "scene": [
+        "chair",
+        "picture",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "mu(91);"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant"
+      ],
+      "task": "Move right move left",
+      "response": "mr(45); ml(88);"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "phone"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(27); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(45); tu(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "book"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "s('chair');"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture",
+        "window",
+        "laptop"
+      ],
+      "task": "Move left object",
+      "response": "ml(55); g('laptop');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Object",
+      "response": "s('remote');"
+    },
+    {
+      "scene": [
+        "keys",
+        "remote",
+        "mug"
+      ],
+      "task": "Move left turn clockwise take picture",
+      "response": "ml(70); tc(45); tp();"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Object",
+      "response": "md(10);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(51); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "window"
+      ],
+      "task": "Move right object",
+      "response": "mr(79); md(73);"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "keys",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "md(64);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "laptop",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "g('keys');"
+    },
+    {
+      "scene": [
+        "mug",
+        "keys",
+        "laptop",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(78); ?iv('phone')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant"
+      ],
+      "task": "Move forward object",
+      "response": "mf(24); g('book');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(45);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "picture",
+        "book"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); md(57);"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone",
+        "keys"
+      ],
+      "task": "Move backward turn clockwise take picture",
+      "response": "mb(66); tc(90); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(180); mf(74);"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug",
+        "book",
+        "plant"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); _target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "window"
+      ],
+      "task": "Turn counter-clockwise turn clockwise take picture",
+      "response": "tu(45); tc(180); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "plant",
+        "chair"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(69); mb(22);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(93); s('chair');"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "remote",
+        "window"
+      ],
+      "task": "Turn clockwise turn clockwise",
+      "response": "tc(45); tc(30);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "window",
+        "phone"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(21); ml(34);"
+    },
+    {
+      "scene": [
+        "chair",
+        "book",
+        "picture",
+        "keys"
+      ],
+      "task": "Move right object",
+      "response": "mr(82); md(33);"
+    },
+    {
+      "scene": [
+        "book",
+        "window",
+        "mug"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(91); ml(31);"
+    },
+    {
+      "scene": [
+        "chair",
+        "plant",
+        "mug",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(90); mf(89);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(72); s('remote'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "picture",
+        "plant"
+      ],
+      "task": "Object take picture",
+      "response": "s('picture'); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); _d=od('picture'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(85); s('plant');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn clockwise move forward take picture",
+      "response": "tc(30); mf(40); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote"
+      ],
+      "task": "Move right object",
+      "response": "mr(76); g('mug');"
+    },
+    {
+      "scene": [
+        "keys",
+        "book"
+      ],
+      "task": "Move left",
+      "response": "ml(10);"
+    },
+    {
+      "scene": [
+        "book",
+        "chair",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "picture",
+        "plant"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(90); mr(54);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(84); tp();"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(68); mr(38);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window"
+      ],
+      "task": "Move backward move forward",
+      "response": "mb(33); mf(95);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Move left move backward take picture",
+      "response": "ml(24); mb(42); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward",
+      "response": "mb(19);"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "keys",
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(75); md(15);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(62); s('remote');"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug",
+        "remote"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(66); tu(45);"
+    },
+    {
+      "scene": [
+        "keys",
+        "window",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "?iv('remote')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); g('plant');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "remote"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(58); tc(180);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(27); md(17);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "remote"
+      ],
+      "task": "Move forward",
+      "response": "mf(25);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "g('mug');"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug",
+        "window",
+        "book"
+      ],
+      "task": "Move left turn clockwise take picture",
+      "response": "ml(66); tc(90); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop"
+      ],
+      "task": "Move left",
+      "response": "ml(77);"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture",
+        "phone",
+        "laptop"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(90); mf(72);"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "window",
+        "phone"
+      ],
+      "task": "Move forward object",
+      "response": "mf(70); _d=od('laptop'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "book"
+      ],
+      "task": "Move forward",
+      "response": "mf(26);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(22); s('phone');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "s('book'); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('chair');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(52); mf(63);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(36); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture"
+      ],
+      "task": "Move forward",
+      "response": "mf(80);"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "mug",
+        "laptop"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(36); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left turn counter-clockwise take picture",
+      "response": "ml(13); tu(180); tp();"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move left",
+      "response": "ml(66);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "phone",
+        "chair"
+      ],
+      "task": "Move backward object",
+      "response": "mb(19); s('laptop');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window"
+      ],
+      "task": "Move right move right take picture",
+      "response": "mr(43); mr(58); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(56); _target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "chair",
+        "book"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(63); mr(42);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move backward",
+      "response": "mb(89);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise move left take picture",
+      "response": "tu(90); ml(84); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "laptop"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(100); mf(29);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(75); s('phone');"
+    },
+    {
+      "scene": [
+        "chair",
+        "book",
+        "remote",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(23); l('Task complete');"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture",
+        "chair"
+      ],
+      "task": "Move left",
+      "response": "ml(44);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Object",
+      "response": "s('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "chair",
+        "phone"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(30); tc(45);"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "book"
+      ],
+      "task": "Move right move left take picture",
+      "response": "mr(63); ml(64); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "phone"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(28); tu(45);"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "chair"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(45); mr(37);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "picture",
+        "laptop"
+      ],
+      "task": "Move backward turn counter-clockwise take picture",
+      "response": "mb(89); tu(90); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(42); ?iv('plant')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(81); s('phone');"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "keys"
+      ],
+      "task": "Turn clockwise move right take picture",
+      "response": "tc(45); mr(69); tp();"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(180);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "window"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(100); mf(70);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); ?iv('phone')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "book",
+        "mug"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(95); mb(45);"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys",
+        "plant",
+        "mug"
+      ],
+      "task": "Move left move left",
+      "response": "ml(34); ml(13);"
+    },
+    {
+      "scene": [
+        "mug",
+        "book"
+      ],
+      "task": "Move left move right",
+      "response": "ml(98); mr(71);"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "remote"
+      ],
+      "task": "Move right",
+      "response": "mr(78);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "laptop",
+        "mug"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(40); mb(51);"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "book",
+        "window"
+      ],
+      "task": "Move left",
+      "response": "ml(21);"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "keys",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(100); g('phone');"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "book",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(68); s('book');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(75); tc(30);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "phone",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); g('remote');"
+    },
+    {
+      "scene": [
+        "window",
+        "book",
+        "remote"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(38); g('keys'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Move left",
+      "response": "ml(39);"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "window"
+      ],
+      "task": "Move left turn clockwise take picture",
+      "response": "ml(13); tc(45); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(44);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "remote"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(51); ?iv('window')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "window"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(48); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "window"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(14); tc(45);"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('laptop');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "phone",
+        "remote"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); s('remote');"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move left move right",
+      "response": "ml(37); mr(20);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); s('picture');"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Move right move right",
+      "response": "mr(57); mr(41);"
+    },
+    {
+      "scene": [
+        "chair",
+        "book"
+      ],
+      "task": "Object",
+      "response": "g('phone');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "chair",
+        "window"
+      ],
+      "task": "Object",
+      "response": "s('keys');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "remote",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(90);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(59); _d=od('laptop'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(20); md(31);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move left object",
+      "response": "ml(17); g('picture');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(88); mb(37);"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone",
+        "window"
+      ],
+      "task": "Move left move right take picture",
+      "response": "ml(25); mr(60); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "window"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(45); mf(65); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); ?iv('plant')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left",
+      "response": "ml(95);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "plant"
+      ],
+      "task": "Move forward object",
+      "response": "mf(69); md(30);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "phone",
+        "chair"
+      ],
+      "task": "Move forward",
+      "response": "mf(68);"
+    },
+    {
+      "scene": [
+        "book",
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(54); s('laptop');"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(45);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move right object",
+      "response": "mr(82); mu(20);"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "s('mug');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn clockwise turn clockwise",
+      "response": "tc(45); tc(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "chair",
+        "keys"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(47); ml(61);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move backward object",
+      "response": "mb(82); _d=od('remote'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "chair"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "picture",
+        "keys"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(97); s('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(88); s('book');"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(72); s('plant');"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "s('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "md(28);"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug",
+        "plant"
+      ],
+      "task": "Turn clockwise move backward take picture",
+      "response": "tc(45); mb(97); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "picture"
+      ],
+      "task": "Move left object",
+      "response": "ml(65); l('Task complete');"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(61); mr(70);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(79); g('remote');"
+    },
+    {
+      "scene": [
+        "book",
+        "chair",
+        "mug",
+        "keys"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(60); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); mu(58);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "mug",
+        "window"
+      ],
+      "task": "Move forward object",
+      "response": "mf(96); g('plant');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move forward object",
+      "response": "mf(35); g('chair');"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); md(95);"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "laptop",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(180); tu(30);"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys",
+        "plant"
+      ],
+      "task": "Turn clockwise move backward",
+      "response": "tc(90); mb(25);"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); _target=sa('something edible');"
+    },
+    {
+      "scene": [
+        "phone",
+        "plant",
+        "remote",
+        "mug"
+      ],
+      "task": "Move backward turn clockwise",
+      "response": "mb(33); tc(30);"
+    },
+    {
+      "scene": [
+        "keys",
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(42); s('mug');"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture",
+        "window",
+        "chair"
+      ],
+      "task": "Move forward",
+      "response": "mf(97);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(12); mb(34);"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_target=sa('important document');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(78); mf(37);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Object",
+      "response": "_target=sa('important document');"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "book",
+        "window"
+      ],
+      "task": "Move right move right",
+      "response": "mr(73); mr(98);"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "picture"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "book"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(180); mf(91);"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "book",
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(69); g('plant');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(32); ?iv('keys')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone"
+      ],
+      "task": "Move backward",
+      "response": "mb(69);"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(90); mf(50);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(90); ?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug"
+      ],
+      "task": "Object take picture",
+      "response": "l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug",
+        "remote",
+        "picture"
+      ],
+      "task": "Move left object",
+      "response": "ml(69); s('remote');"
+    },
+    {
+      "scene": [
+        "keys",
+        "window"
+      ],
+      "task": "Turn clockwise move backward",
+      "response": "tc(90); mb(33);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "?iv('plant')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "chair"
+      ],
+      "task": "Move left move left take picture",
+      "response": "ml(36); ml(57); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop",
+        "mug"
+      ],
+      "task": "Move backward object",
+      "response": "mb(49); s('mug');"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(90); ml(46);"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "book",
+        "keys"
+      ],
+      "task": "Move forward",
+      "response": "mf(13);"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "laptop",
+        "book"
+      ],
+      "task": "Move right",
+      "response": "mr(62);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise move forward take picture",
+      "response": "tu(45); mf(42); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Object take picture",
+      "response": "?iv('keys')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "?iv('mug')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "plant",
+        "window",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "?iv('laptop')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Move forward object",
+      "response": "mf(11); g('picture');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(57); ?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "plant",
+        "mug",
+        "window"
+      ],
+      "task": "Turn clockwise move forward take picture",
+      "response": "tc(30); mf(25); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(54); g('picture');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left",
+      "response": "ml(32);"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); l('Task complete');"
+    },
+    {
+      "scene": [
+        "book",
+        "chair",
+        "phone",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "s('mug');"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "laptop"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(45); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair",
+        "book"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(59); mf(66); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "picture",
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(44); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(90); tu(45);"
+    },
+    {
+      "scene": [
+        "plant",
+        "window"
+      ],
+      "task": "Move left object",
+      "response": "ml(33); md(75);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window",
+        "remote",
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "_target=sa('important document'); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "laptop",
+        "keys"
+      ],
+      "task": "Move left move forward take picture",
+      "response": "ml(46); mf(67); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone",
+        "picture"
+      ],
+      "task": "Move left",
+      "response": "ml(99);"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(30);"
+    },
+    {
+      "scene": [
+        "book",
+        "mug",
+        "window"
+      ],
+      "task": "Move forward move forward take picture",
+      "response": "mf(21); mf(14); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "s('laptop');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); g('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "remote"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(64); mb(56);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(24); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); _target=sa('something edible');"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "md(91);"
+    },
+    {
+      "scene": [
+        "phone",
+        "book",
+        "plant"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(68); ?iv('book')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "window"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(83); tu(180);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); s('mug');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "?iv('keys')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "plant",
+        "remote"
+      ],
+      "task": "Move right object",
+      "response": "mr(47); g('mug');"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Object",
+      "response": "g('window');"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug",
+        "picture"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "chair",
+        "window"
+      ],
+      "task": "Move backward move left take picture",
+      "response": "mb(55); ml(51); tp();"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "remote",
+        "window",
+        "plant",
+        "mug"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(31); s('laptop'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Move left object",
+      "response": "ml(21); g('book');"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(43); g('window');"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "chair",
+        "window"
+      ],
+      "task": "Object take picture",
+      "response": "_d=od('book'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "mug",
+        "picture"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(89); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Move backward object",
+      "response": "mb(69); _target=sa('valuable item');"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise take picture",
+      "response": "tu(45); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "book"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(76); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "plant",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "phone"
+      ],
+      "task": "Move forward",
+      "response": "mf(70);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(87); md(47);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "phone",
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(32); s('keys');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(11); md(72);"
+    },
+    {
+      "scene": [
+        "keys",
+        "laptop",
+        "mug",
+        "remote"
+      ],
+      "task": "Move forward",
+      "response": "mf(17);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "g('phone');"
+    },
+    {
+      "scene": [
+        "chair",
+        "picture",
+        "remote"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(32); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "remote"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(44); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "phone"
+      ],
+      "task": "Move left object",
+      "response": "ml(29); _d=od('chair'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(32); s('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "_d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "keys",
+        "laptop",
+        "window",
+        "phone"
+      ],
+      "task": "Move forward",
+      "response": "mf(54);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "plant",
+        "mug"
+      ],
+      "task": "Move forward object",
+      "response": "mf(74); g('remote');"
+    },
+    {
+      "scene": [
+        "chair",
+        "book",
+        "phone",
+        "plant"
+      ],
+      "task": "Move left move left",
+      "response": "ml(26); ml(60);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(92); tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug",
+        "keys"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(40); g('book'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "chair",
+        "plant"
+      ],
+      "task": "Move left take picture",
+      "response": "ml(26); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "window",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "picture",
+        "chair"
+      ],
+      "task": "Move backward",
+      "response": "mb(87);"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); g('phone');"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Turn counter-clockwise move forward take picture",
+      "response": "tu(180); mf(30); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(18); s('chair');"
+    },
+    {
+      "scene": [
+        "picture",
+        "book",
+        "mug"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(61); mf(93);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "s('chair');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window"
+      ],
+      "task": "Object",
+      "response": "md(90);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "window"
+      ],
+      "task": "Move forward object",
+      "response": "mf(22); g('mug');"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(67); g('window');"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "phone"
+      ],
+      "task": "Move right take picture take picture",
+      "response": "mr(32); tp(); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(65); l('Task complete');"
+    },
+    {
+      "scene": [
+        "phone",
+        "book"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(82); mu(53); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "book",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(38); g('keys');"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "?iv('phone')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move right object",
+      "response": "mr(81); g('phone');"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "book"
+      ],
+      "task": "Move left",
+      "response": "ml(95);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn clockwise turn counter-clockwise take picture",
+      "response": "tc(90); tu(180); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Move forward object",
+      "response": "mf(28); g('chair');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(21); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "mug",
+        "plant",
+        "phone"
+      ],
+      "task": "Move forward move left take picture",
+      "response": "mf(19); ml(64); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(52); g('chair');"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "mug",
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(99); l('Task complete');"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(49); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop",
+        "plant"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); g('keys');"
+    },
+    {
+      "scene": [
+        "book",
+        "keys",
+        "plant",
+        "chair"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(24); mr(47);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move left object",
+      "response": "ml(85); g('phone');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move right",
+      "response": "mr(80);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(180);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(92); ml(56);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "laptop"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(90); mr(99);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote"
+      ],
+      "task": "Move right take picture take picture",
+      "response": "mr(76); tp(); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Move backward turn clockwise take picture",
+      "response": "mb(90); tc(45); tp();"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(60); g('window'); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "book"
+      ],
+      "task": "Object",
+      "response": "g('mug');"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "plant",
+        "phone"
+      ],
+      "task": "Move forward turn counter-clockwise",
+      "response": "mf(89); tu(45);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "s('picture');"
+    },
+    {
+      "scene": [
+        "phone",
+        "window",
+        "book",
+        "mug"
+      ],
+      "task": "Move forward object",
+      "response": "mf(23); ?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); md(12);"
+    },
+    {
+      "scene": [
+        "phone",
+        "chair"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(94); mf(79); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "book",
+        "picture",
+        "keys"
+      ],
+      "task": "Move left object",
+      "response": "ml(63); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "keys",
+        "window"
+      ],
+      "task": "Move backward object",
+      "response": "mb(50); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "mug",
+        "remote"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(73); mf(45);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move right object",
+      "response": "mr(91); g('window');"
+    },
+    {
+      "scene": [
+        "mug",
+        "keys",
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(27); s('chair');"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "_target=sa('something edible');"
+    },
+    {
+      "scene": [
+        "plant",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise circle around",
+      "response": "tu(45); mi(True);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Move backward circle around",
+      "response": "mb(96); mi(True);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move forward object",
+      "response": "mf(36); s('phone');"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(80); tc(45);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Object",
+      "response": "s('phone');"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(69); tp();"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(45); ml(96);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Turn counter-clockwise move right",
+      "response": "tu(180); mr(65);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn counter-clockwise move backward",
+      "response": "tu(30); mb(70);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move forward",
+      "response": "mf(40);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move forward",
+      "response": "mf(46);"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(67); ml(52);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "keys",
+        "chair"
+      ],
+      "task": "Move backward move right",
+      "response": "mb(43); mr(70);"
+    },
+    {
+      "scene": [
+        "mug",
+        "book"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(14); tu(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "laptop",
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(32); g('keys');"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(90); s('remote');"
+    },
+    {
+      "scene": [
+        "keys",
+        "window",
+        "plant"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(45); tu(45);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair"
+      ],
+      "task": "Move backward object",
+      "response": "mb(40); g('remote');"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "laptop",
+        "book"
+      ],
+      "task": "Move left object",
+      "response": "ml(86); g('chair');"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone",
+        "plant"
+      ],
+      "task": "Turn clockwise take picture",
+      "response": "tc(180); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(89); mb(84);"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "window",
+        "chair"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(12); mf(100); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "picture",
+        "keys"
+      ],
+      "task": "Move right move forward take picture",
+      "response": "mr(30); mf(53); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "mug",
+        "remote",
+        "plant"
+      ],
+      "task": "Move forward move forward take picture",
+      "response": "mf(51); mf(41); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "phone",
+        "laptop"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(56); s('plant'); tp();"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(39); g('phone');"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair",
+        "picture",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "s('window');"
+    },
+    {
+      "scene": [
+        "remote",
+        "window",
+        "book"
+      ],
+      "task": "Move forward",
+      "response": "mf(12);"
+    },
+    {
+      "scene": [
+        "chair",
+        "window",
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(180); g('book');"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "chair"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(45);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right object",
+      "response": "mr(28); g('remote');"
+    },
+    {
+      "scene": [
+        "mug",
+        "remote",
+        "laptop",
+        "window"
+      ],
+      "task": "Move right move left take picture",
+      "response": "mr(59); ml(27); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "book",
+        "chair",
+        "mug"
+      ],
+      "task": "Move forward turn clockwise",
+      "response": "mf(11); tc(180);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant"
+      ],
+      "task": "Move backward",
+      "response": "mb(53);"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "plant"
+      ],
+      "task": "Move backward object",
+      "response": "mb(21); g('remote');"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "mug",
+        "book"
+      ],
+      "task": "Object",
+      "response": "md(60);"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(87); _d=od('chair'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(29); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(51); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys",
+        "plant",
+        "remote"
+      ],
+      "task": "Move left object",
+      "response": "ml(50); _d=od('chair'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "picture",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(47); ?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "keys"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(100); mb(20);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move backward",
+      "response": "mb(70);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(20); mf(44);"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "window",
+        "book"
+      ],
+      "task": "Move left move left",
+      "response": "ml(76); ml(87);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(55); mr(76);"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(31); s('book');"
+    },
+    {
+      "scene": [
+        "plant",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); md(99);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move left",
+      "response": "ml(56);"
+    },
+    {
+      "scene": [
+        "phone",
+        "chair",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(180);"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(45); tu(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(45); tc(90);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair",
+        "picture",
+        "plant"
+      ],
+      "task": "Object take picture",
+      "response": "_d=od('book'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(81); mf(50);"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "mug",
+        "book"
+      ],
+      "task": "Move right",
+      "response": "mr(45);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "g('window');"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise take picture",
+      "response": "tu(90); tu(45); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(37);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "window",
+        "phone"
+      ],
+      "task": "Move backward",
+      "response": "mb(40);"
+    },
+    {
+      "scene": [
+        "book",
+        "window",
+        "keys",
+        "chair"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(51); mf(15);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(55); l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "phone",
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(65); md(34);"
+    },
+    {
+      "scene": [
+        "window",
+        "book",
+        "picture"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "remote",
+        "window",
+        "chair"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(85); mb(85);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "remote",
+        "phone",
+        "book"
+      ],
+      "task": "Turn counter-clockwise move forward",
+      "response": "tu(90); mf(57);"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "window",
+        "remote"
+      ],
+      "task": "Move forward",
+      "response": "mf(95);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(90); ml(11);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Object take picture",
+      "response": "mu(78); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); l('Task complete');"
+    },
+    {
+      "scene": [
+        "keys",
+        "book",
+        "phone",
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(27); ?iv('window')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "book",
+        "mug",
+        "phone",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "g('book');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); s('plant');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(45); mr(80);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "remote",
+        "book"
+      ],
+      "task": "Turn counter-clockwise take picture",
+      "response": "tu(90); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair",
+        "laptop",
+        "keys"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(45); tu(180);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move forward",
+      "response": "mf(12);"
+    },
+    {
+      "scene": [
+        "window",
+        "keys"
+      ],
+      "task": "Move left move forward take picture",
+      "response": "ml(96); mf(27); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "keys",
+        "chair"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(36); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "s('phone');"
+    },
+    {
+      "scene": [
+        "book",
+        "phone"
+      ],
+      "task": "Move left object",
+      "response": "ml(45); g('phone');"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "chair",
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(87);"
+    },
+    {
+      "scene": [
+        "mug",
+        "keys",
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "l('Task complete'); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(27); mb(50);"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(80); mu(78);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "window",
+        "keys"
+      ],
+      "task": "Move backward",
+      "response": "mb(93);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(99); s('window'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "mug",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "md(29);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Object take picture",
+      "response": "_d=od('mug'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "chair"
+      ],
+      "task": "Turn clockwise turn counter-clockwise take picture",
+      "response": "tc(30); tu(45); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "window"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(65); mf(42);"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right turn counter-clockwise",
+      "response": "mr(84); tu(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "laptop",
+        "book"
+      ],
+      "task": "Move backward turn clockwise take picture",
+      "response": "mb(97); tc(90); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant"
+      ],
+      "task": "Take picture",
+      "response": "tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys",
+        "phone"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop"
+      ],
+      "task": "Move left move left take picture",
+      "response": "ml(51); ml(14); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "remote"
+      ],
+      "task": "Move forward",
+      "response": "mf(20);"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "laptop",
+        "window"
+      ],
+      "task": "Move right circle around",
+      "response": "mr(80); mi(False);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Object",
+      "response": "g('plant');"
+    },
+    {
+      "scene": [
+        "plant",
+        "picture",
+        "keys"
+      ],
+      "task": "Move right object",
+      "response": "mr(11); s('book');"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "mug",
+        "phone"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(13); tc(180);"
+    },
+    {
+      "scene": [
+        "plant",
+        "remote",
+        "book",
+        "keys"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(82); s('window'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "phone"
+      ],
+      "task": "Move forward object",
+      "response": "mf(94); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "chair",
+        "window"
+      ],
+      "task": "Move right object",
+      "response": "mr(73); s('mug');"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(45); tu(30);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote",
+        "keys"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(58); mf(80);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "book",
+        "window"
+      ],
+      "task": "Move left object",
+      "response": "ml(23); _d=od('book'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture"
+      ],
+      "task": "Move left",
+      "response": "ml(96);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "phone"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(93); mb(55);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move right turn counter-clockwise",
+      "response": "mr(46); tu(30);"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "chair"
+      ],
+      "task": "Turn clockwise move backward take picture",
+      "response": "tc(180); mb(77); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "mug",
+        "laptop",
+        "chair"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(54); tu(90);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object take picture",
+      "response": "_d=od('plant'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(54); l('Task complete');"
+    },
+    {
+      "scene": [
+        "picture",
+        "chair",
+        "remote"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(30); mr(75);"
+    },
+    {
+      "scene": [
+        "picture",
+        "laptop",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "g('picture');"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "phone",
+        "picture"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(51); mr(71);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move backward object take picture",
+      "response": "mb(11); s('remote'); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); md(54);"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "window",
+        "plant"
+      ],
+      "task": "Move forward object",
+      "response": "mf(88); s('remote');"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair",
+        "window",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(79); s('phone');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Object",
+      "response": "_target=sa('something edible');"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "remote",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise move right",
+      "response": "tu(30); mr(76);"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "g('laptop');"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "keys",
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(39); s('plant'); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); ?iv('phone')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "picture",
+        "keys"
+      ],
+      "task": "Turn clockwise move left",
+      "response": "tc(90); ml(20);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant",
+        "remote",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); l('Task complete');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move right move left",
+      "response": "mr(84); ml(83);"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug"
+      ],
+      "task": "Move backward move left",
+      "response": "mb(84); ml(65);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "plant"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('plant');"
+    },
+    {
+      "scene": [
+        "keys",
+        "mug",
+        "remote"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); g('mug'); tp();"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Move right move right",
+      "response": "mr(92); mr(27);"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug",
+        "picture",
+        "book"
+      ],
+      "task": "Turn counter-clockwise circle around",
+      "response": "tu(180); mi(False);"
+    },
+    {
+      "scene": [
+        "picture",
+        "window"
+      ],
+      "task": "Move forward move right take picture",
+      "response": "mf(19); mr(11); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop",
+        "window"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(66); tc(45);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone"
+      ],
+      "task": "Turn counter-clockwise take picture take picture",
+      "response": "tu(30); tp(); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "g('mug');"
+    },
+    {
+      "scene": [
+        "phone",
+        "keys"
+      ],
+      "task": "Move right object",
+      "response": "mr(71); md(19);"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "book",
+        "window"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(29); g('plant'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "book",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); s('remote');"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "remote"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(30);"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant"
+      ],
+      "task": "Move backward object",
+      "response": "mb(88); mu(27);"
+    },
+    {
+      "scene": [
+        "chair",
+        "phone",
+        "book",
+        "mug"
+      ],
+      "task": "Object",
+      "response": "g('remote');"
+    },
+    {
+      "scene": [
+        "window",
+        "laptop",
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(10); _d=od('plant'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "phone",
+        "laptop",
+        "remote",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); mu(86);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "phone",
+        "remote"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(51); mb(20);"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "keys",
+        "remote"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(30); mf(61);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Object",
+      "response": "s('chair');"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(61); s('chair');"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward object",
+      "response": "mf(81); g('mug');"
+    },
+    {
+      "scene": [
+        "remote",
+        "mug",
+        "window"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); _target=sa('fragile object');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move right object",
+      "response": "mr(52); ?iv('picture')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move left move left",
+      "response": "ml(35); ml(53);"
+    },
+    {
+      "scene": [
+        "keys",
+        "remote"
+      ],
+      "task": "Move forward object",
+      "response": "mf(38); g('book');"
+    },
+    {
+      "scene": [
+        "chair",
+        "laptop",
+        "picture"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(98); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "mug"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('chair');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move right",
+      "response": "mr(31);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Object",
+      "response": "g('book');"
+    },
+    {
+      "scene": [
+        "plant",
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(51); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "phone",
+        "laptop",
+        "remote"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(30); mf(72);"
+    },
+    {
+      "scene": [
+        "window",
+        "phone",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise move right",
+      "response": "tu(90); mr(81);"
+    },
+    {
+      "scene": [
+        "phone",
+        "plant",
+        "picture",
+        "book"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(82); tu(180);"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "?iv('mug')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(90);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window"
+      ],
+      "task": "Move left object",
+      "response": "ml(65); g('keys');"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "picture"
+      ],
+      "task": "Move forward object",
+      "response": "mf(29); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "plant",
+        "picture",
+        "window"
+      ],
+      "task": "Move backward",
+      "response": "mb(85);"
+    },
+    {
+      "scene": [
+        "window",
+        "book"
+      ],
+      "task": "Object",
+      "response": "s('book');"
+    },
+    {
+      "scene": [
+        "chair",
+        "window"
+      ],
+      "task": "Turn clockwise move backward take picture",
+      "response": "tc(90); mb(11); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "window",
+        "phone",
+        "keys"
+      ],
+      "task": "Move backward move backward take picture",
+      "response": "mb(66); mb(28); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop",
+        "chair",
+        "keys"
+      ],
+      "task": "Move forward move left",
+      "response": "mf(24); ml(74);"
+    },
+    {
+      "scene": [
+        "chair",
+        "remote",
+        "keys"
+      ],
+      "task": "Move backward move backward take picture",
+      "response": "mb(73); mb(14); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant"
+      ],
+      "task": "Move right object",
+      "response": "mr(88); s('mug');"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "mug",
+        "book"
+      ],
+      "task": "Object take picture",
+      "response": "s('book'); tp();"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move backward turn clockwise",
+      "response": "mb(64); tc(45);"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "mu(36);"
+    },
+    {
+      "scene": [
+        "remote",
+        "picture",
+        "phone",
+        "book"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(180); s('book'); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(18); g('window');"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "phone",
+        "picture"
+      ],
+      "task": "Turn clockwise move right",
+      "response": "tc(45); mr(88);"
+    },
+    {
+      "scene": [
+        "keys",
+        "picture"
+      ],
+      "task": "Move right move backward",
+      "response": "mr(20); mb(100);"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug",
+        "picture"
+      ],
+      "task": "Move backward object",
+      "response": "mb(55); g('picture');"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "phone",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); g('book');"
+    },
+    {
+      "scene": [
+        "book",
+        "laptop",
+        "phone",
+        "keys"
+      ],
+      "task": "Object take picture",
+      "response": "_d=od('book'); l('Distance: '+_d); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys",
+        "remote"
+      ],
+      "task": "Move left",
+      "response": "ml(76);"
+    },
+    {
+      "scene": [
+        "phone",
+        "laptop",
+        "picture",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); s('mug');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "picture",
+        "mug"
+      ],
+      "task": "Circle around",
+      "response": "mi(False);"
+    },
+    {
+      "scene": [
+        "picture",
+        "plant",
+        "chair"
+      ],
+      "task": "Move left object",
+      "response": "ml(88); g('mug');"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant"
+      ],
+      "task": "Move forward",
+      "response": "mf(36);"
+    },
+    {
+      "scene": [
+        "phone",
+        "remote",
+        "keys",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise",
+      "response": "tu(45);"
+    },
+    {
+      "scene": [
+        "mug",
+        "plant",
+        "chair",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); g('chair');"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop",
+        "keys"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(30); g('book');"
+    },
+    {
+      "scene": [
+        "mug",
+        "keys"
+      ],
+      "task": "Move forward object",
+      "response": "mf(97); l('Task complete');"
+    },
+    {
+      "scene": [
+        "phone"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(90); tc(90);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "laptop"
+      ],
+      "task": "Move left move right",
+      "response": "ml(47); mr(40);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "book",
+        "plant",
+        "picture"
+      ],
+      "task": "Move forward move forward take picture",
+      "response": "mf(55); mf(14); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "phone",
+        "remote"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(84); tu(180);"
+    },
+    {
+      "scene": [
+        "mug",
+        "picture",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move forward move right",
+      "response": "mf(68); mr(64);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right object",
+      "response": "mr(12); s('plant');"
+    },
+    {
+      "scene": [
+        "phone",
+        "picture",
+        "book"
+      ],
+      "task": "Turn clockwise turn counter-clockwise",
+      "response": "tc(180); tu(180);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(37); s('keys'); tp();"
+    },
+    {
+      "scene": [
+        "picture",
+        "window",
+        "mug",
+        "remote"
+      ],
+      "task": "Move backward",
+      "response": "mb(46);"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "phone"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(45); ?iv('chair')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "mug",
+        "laptop"
+      ],
+      "task": "Move left object",
+      "response": "ml(97); g('remote');"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair",
+        "window"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(90); mf(11);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(96); s('book'); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "mug",
+        "book"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(45); mf(86);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys",
+        "chair",
+        "phone"
+      ],
+      "task": "Move forward object",
+      "response": "mf(84); _d=od('picture'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "window",
+        "plant"
+      ],
+      "task": "Move forward object take picture",
+      "response": "mf(21); _target=sa('important document'); tp();"
+    },
+    {
+      "scene": [
+        "mug",
+        "book",
+        "picture",
+        "chair"
+      ],
+      "task": "Object",
+      "response": "_d=od('laptop'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone",
+        "book"
+      ],
+      "task": "Move forward object",
+      "response": "mf(50); s('keys');"
+    },
+    {
+      "scene": [
+        "keys",
+        "chair"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(180); s('chair'); tp();"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(90); tc(30);"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move left object",
+      "response": "ml(47); _d=od('chair'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(90); mf(25);"
+    },
+    {
+      "scene": [
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('phone');"
+    },
+    {
+      "scene": [
+        "keys",
+        "window",
+        "book",
+        "chair"
+      ],
+      "task": "Turn clockwise turn clockwise",
+      "response": "tc(45); tc(30);"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Object take picture",
+      "response": "g('picture'); tp();"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Circle around",
+      "response": "mi(True);"
+    },
+    {
+      "scene": [
+        "remote",
+        "book",
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(100); g('mug');"
+    },
+    {
+      "scene": [
+        "book",
+        "remote"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('chair');"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move backward object",
+      "response": "mb(11); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(90); ?iv('picture')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Move right",
+      "response": "mr(46);"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise turn counter-clockwise",
+      "response": "tu(30); tu(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "book"
+      ],
+      "task": "Object",
+      "response": "s('keys');"
+    },
+    {
+      "scene": [
+        "window",
+        "remote",
+        "keys"
+      ],
+      "task": "Move left move backward take picture",
+      "response": "ml(30); mb(65); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(71);"
+    },
+    {
+      "scene": [
+        "book",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "mu(90);"
+    },
+    {
+      "scene": [
+        "chair",
+        "book"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(45); s('mug'); tp();"
+    },
+    {
+      "scene": [
+        "plant"
+      ],
+      "task": "Move backward turn clockwise",
+      "response": "mb(35); tc(45);"
+    },
+    {
+      "scene": [
+        "keys",
+        "book",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "g('keys');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "keys"
+      ],
+      "task": "Move left",
+      "response": "ml(38);"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "mug",
+        "phone"
+      ],
+      "task": "Turn clockwise",
+      "response": "tc(90);"
+    },
+    {
+      "scene": [
+        "chair",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(18); s('mug');"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug"
+      ],
+      "task": "Move right move left take picture",
+      "response": "mr(90); ml(92); tp();"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant",
+        "book"
+      ],
+      "task": "Move right move forward",
+      "response": "mr(40); mf(21);"
+    },
+    {
+      "scene": [
+        "picture",
+        "keys",
+        "laptop",
+        "plant"
+      ],
+      "task": "Move right move right take picture",
+      "response": "mr(38); mr(65); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "remote"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(30); ?iv('plant')==True {->True}->False; tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "window",
+        "keys"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(25); tc(90);"
+    },
+    {
+      "scene": [
+        "window",
+        "picture"
+      ],
+      "task": "Object",
+      "response": "_target=sa('important document');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "mug"
+      ],
+      "task": "Move forward object",
+      "response": "mf(46); s('chair');"
+    },
+    {
+      "scene": [
+        "picture",
+        "chair",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "mu(38);"
+    },
+    {
+      "scene": [
+        "keys",
+        "phone",
+        "window",
+        "laptop"
+      ],
+      "task": "Move right take picture",
+      "response": "mr(46); tp();"
+    },
+    {
+      "scene": [
+        "chair",
+        "keys"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(50); mb(57);"
+    },
+    {
+      "scene": [
+        "mug",
+        "window",
+        "book",
+        "plant"
+      ],
+      "task": "Move forward take picture",
+      "response": "mf(45); tp();"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move forward move forward",
+      "response": "mf(72); mf(46);"
+    },
+    {
+      "scene": [
+        "picture",
+        "mug"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(180); _target=sa('important document');"
+    },
+    {
+      "scene": [
+        "remote",
+        "phone"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(18); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "remote",
+        "window"
+      ],
+      "task": "Move forward",
+      "response": "mf(84);"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Object",
+      "response": "md(13);"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move forward turn clockwise take picture",
+      "response": "mf(73); tc(30); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "book"
+      ],
+      "task": "Object",
+      "response": "l('Task complete');"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "book",
+        "chair"
+      ],
+      "task": "Move right object",
+      "response": "mr(96); _d=od('chair'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "remote",
+        "laptop"
+      ],
+      "task": "Move left",
+      "response": "ml(23);"
+    },
+    {
+      "scene": [
+        "plant",
+        "book"
+      ],
+      "task": "Move right move left",
+      "response": "mr(18); ml(91);"
+    },
+    {
+      "scene": [
+        "keys",
+        "plant"
+      ],
+      "task": "Object",
+      "response": "mu(66);"
+    },
+    {
+      "scene": [
+        "window",
+        "plant",
+        "laptop",
+        "chair"
+      ],
+      "task": "Turn clockwise move forward",
+      "response": "tc(30); mf(91);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window"
+      ],
+      "task": "Move right move right",
+      "response": "mr(83); mr(32);"
+    },
+    {
+      "scene": [
+        "mug"
+      ],
+      "task": "Move right object",
+      "response": "mr(24); s('remote');"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(24); s('window');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "book",
+        "remote"
+      ],
+      "task": "Turn counter-clockwise turn clockwise",
+      "response": "tu(45); tc(30);"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Object",
+      "response": "mu(44);"
+    },
+    {
+      "scene": [
+        "picture"
+      ],
+      "task": "Move forward turn counter-clockwise",
+      "response": "mf(72); tu(30);"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair",
+        "laptop"
+      ],
+      "task": "Object",
+      "response": "mu(45);"
+    },
+    {
+      "scene": [
+        "remote"
+      ],
+      "task": "Move right object",
+      "response": "mr(26); g('picture');"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move right object take picture",
+      "response": "mr(36); _target=sa('important document'); tp();"
+    },
+    {
+      "scene": [
+        "window"
+      ],
+      "task": "Move forward move backward",
+      "response": "mf(99); mb(40);"
+    },
+    {
+      "scene": [
+        "remote",
+        "keys",
+        "picture"
+      ],
+      "task": "Move left",
+      "response": "ml(60);"
+    },
+    {
+      "scene": [
+        "book",
+        "plant"
+      ],
+      "task": "Move left object take picture",
+      "response": "ml(38); md(35); tp();"
+    },
+    {
+      "scene": [
+        "laptop",
+        "chair",
+        "keys"
+      ],
+      "task": "Move backward turn counter-clockwise",
+      "response": "mb(40); tu(30);"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair"
+      ],
+      "task": "Move forward object",
+      "response": "mf(16); mu(83);"
+    },
+    {
+      "scene": [
+        "remote",
+        "plant",
+        "laptop",
+        "book"
+      ],
+      "task": "Move forward object",
+      "response": "mf(14); l('Task complete');"
+    },
+    {
+      "scene": [
+        "laptop",
+        "picture",
+        "chair"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(19); mb(88);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "laptop",
+        "picture"
+      ],
+      "task": "Move right move right",
+      "response": "mr(66); mr(75);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair"
+      ],
+      "task": "Move right move backward take picture",
+      "response": "mr(52); mb(75); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "mug"
+      ],
+      "task": "Move left turn counter-clockwise",
+      "response": "ml(67); tu(45);"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Move left move forward",
+      "response": "ml(74); mf(57);"
+    },
+    {
+      "scene": [
+        "window",
+        "keys",
+        "phone"
+      ],
+      "task": "Take picture take picture",
+      "response": "tp(); tp();"
+    },
+    {
+      "scene": [
+        "remote",
+        "chair"
+      ],
+      "task": "Move left turn clockwise",
+      "response": "ml(19); tc(180);"
+    },
+    {
+      "scene": [
+        "laptop",
+        "window",
+        "chair"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(30); g('laptop');"
+    },
+    {
+      "scene": [
+        "picture",
+        "phone",
+        "window"
+      ],
+      "task": "Turn counter-clockwise object take picture",
+      "response": "tu(90); s('remote'); tp();"
+    },
+    {
+      "scene": [
+        "plant",
+        "book",
+        "remote"
+      ],
+      "task": "Object take picture",
+      "response": "md(69); tp();"
+    },
+    {
+      "scene": [
+        "book",
+        "chair",
+        "keys",
+        "phone"
+      ],
+      "task": "Move left move backward",
+      "response": "ml(37); mb(90);"
+    },
+    {
+      "scene": [
+        "mug",
+        "chair",
+        "remote",
+        "window"
+      ],
+      "task": "Move backward take picture",
+      "response": "mb(37); tp();"
+    },
+    {
+      "scene": [
+        "phone",
+        "chair",
+        "laptop"
+      ],
+      "task": "Move forward",
+      "response": "mf(62);"
+    },
+    {
+      "scene": [
+        "mug",
+        "phone"
+      ],
+      "task": "Move forward",
+      "response": "mf(29);"
+    },
+    {
+      "scene": [
+        "plant",
+        "mug",
+        "laptop",
+        "keys"
+      ],
+      "task": "Move backward object",
+      "response": "mb(12); s('picture');"
+    },
+    {
+      "scene": [
+        "book"
+      ],
+      "task": "Turn counter-clockwise move left",
+      "response": "tu(45); ml(26);"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "mug"
+      ],
+      "task": "Move backward object",
+      "response": "mb(22); s('book');"
+    },
+    {
+      "scene": [
+        "plant",
+        "chair"
+      ],
+      "task": "Move backward turn clockwise take picture",
+      "response": "mb(12); tc(45); tp();"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "mug"
+      ],
+      "task": "Move left object",
+      "response": "ml(47); _d=od('window'); l('Distance: '+_d);"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise object",
+      "response": "tu(45); g('laptop');"
+    },
+    {
+      "scene": [
+        "plant",
+        "window",
+        "remote"
+      ],
+      "task": "Move backward object",
+      "response": "mb(50); l('Task complete');"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Move backward move backward",
+      "response": "mb(38); mb(85);"
+    },
+    {
+      "scene": [
+        "picture",
+        "remote"
+      ],
+      "task": "Object",
+      "response": "s('book');"
+    },
+    {
+      "scene": [
+        "window",
+        "chair",
+        "book",
+        "keys"
+      ],
+      "task": "Object",
+      "response": "?iv('remote')==True {->True}->False;"
+    },
+    {
+      "scene": [
+        "keys"
+      ],
+      "task": "Turn clockwise object",
+      "response": "tc(90); g('mug');"
+    },
+    {
+      "scene": [
+        "window",
+        "picture",
+        "mug",
+        "keys"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(87); tc(45);"
+    },
+    {
+      "scene": [
+        "phone",
+        "window"
+      ],
+      "task": "Move left object",
+      "response": "ml(32); l('Task complete');"
+    },
+    {
+      "scene": [
+        "chair",
+        "picture"
+      ],
+      "task": "Turn clockwise object take picture",
+      "response": "tc(90); s('picture'); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Turn counter-clockwise move right take picture",
+      "response": "tu(180); mr(76); tp();"
+    },
+    {
+      "scene": [
+        "laptop"
+      ],
+      "task": "Move right turn clockwise",
+      "response": "mr(43); tc(90);"
+    }
+  ]
+}
